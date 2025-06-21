@@ -11,7 +11,8 @@ public class Main {
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Delete Task");
-            System.out.println("4. Exit");
+            System.out.println("4. Clear All Tasks");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
             sc.nextLine();  // consume newline
@@ -42,6 +43,10 @@ public class Main {
                 case 4:
                     System.out.println("👋 Goodbye!");
                     System.exit(0);
+                    break;
+                case 5:
+                    tasks.clear();
+                    System.out.println("🧹 All tasks cleared!");
                     break;
                 default:
                     System.out.println("⚠️ Invalid choice. Try again!");
